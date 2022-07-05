@@ -12,18 +12,22 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Kimberly Hotel</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container-fluid d-flex justify-content-between px-0">
-                <a class="navbar-brand width-25 md-width-20 lg-width-15 me-lg-5 me-xl-5 ms-3 ms-lg-4 ms-xl-5" href="#">
-                    <img src="img/logo.png" alt="Our Logo" class="w-100">
+                <a class="navbar-brand me-lg-5 me-xl-5 ms-3 ms-lg-4 ms-xl-5" href="#">
+                    <img src="img/logo.png" alt="Our Logo" class="h-100">
                 </a>
-                <button class="navbar-toggler bg-pink-1 py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-pink-1 py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOneContent" aria-controls="navbarOneContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class=""><i class="fa-solid fa-bars text-white"></i></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarOneContent">
                     <div class="d-flex flex-column flex-lg-row justify-content-between width-100 px-0 mx-0 ps-lg-0 ms-lg-0 ps-xl-5 ms-xl-5">
                         <ul class="navbar-nav text-grey-4 d-flex flex-column flex-lg-row justify-content-between width-100 lg-width-50 xl-width-45">
                             <li class="nav-item">
@@ -48,6 +52,238 @@
             </div>
         </nav>
     </header>
+    <div class="space py-5 bg-secondary"></div>
+    <header>
+        <nav class="navbar bg-white">
+            <a href="#" class="navbar-brand ms-3 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTwoContent" aria-controls="navbarTwoContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTwoContent">
+                
+            </div>
+        </nav>
+    </header>
+    <div class="space py-5 bg-secondary"></div>
+    <header>
+        <nav class="navbar bg-white d-flex justify-content-between border-bottom hms-border m-0 p-0">
+            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
+                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+              
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
+                <div class="offcanvas-header">
+                    <a href="#" class="navbar-brand offcanvas-title width-50 ms-3">
+                        <img src="img/logo.png" alt="Our Logo" class="w-100">
+                    </a>
+                </div>
+                <div class="offcanvas-body">
+                    
+                </div>
+            </div>
+            <a href="#" class="navbar-brand ms-0 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+            <div class="user me-3 me-lg-4 me-xl-5 d-flex align-items-center">
+                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
+                    <h6 class="text-pink fs-body-1 fw-700 m-0">Kingston I.</h6>
+                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                </div>
+                <div class="user-pic">
+                    <img src="img/user-img.png" alt="User image" class="img-fluid">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row p-0 m-0">
+            <div class="col-lg-2 d-none d-lg-block p-0 m-0">
+                <div class="sidenav bg-neutral-4 box-shad-2 d-flex flex-column justify-content-between border-end border-bottom hms-border">
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2 active">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Rooms</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content col-12 col-lg-10">
+                <div class="container py-4">
+                    <div class="content-box-1 border hms-border bg-white py-4 px-5">
+                        <h6 class="fs-body-1 text-grey-1 fw-700 text-center mb-5">Input Type 1 Variations</h6>
+                        <div class="input-group d-flex justify-content-between">
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">First Name</p>
+                                <input type="text" name="first-name" id="" class="form-input-1 box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="First Name">
+                            </div>
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">Last Name</p>
+                                <input type="text" name="last-name" id="" class="form-input-1 box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="Last Name">
+                                <img src="img/name-input.png" alt="" class="input-icon">
+                            </div>
+                        </div>
+                        <div class="input-group width-100 mb-4 position-relative">
+                            <p class="fs-copyright mb-1">Address Line 1</p>
+                            <input type="text" name="address-1" id="" class="form-input-1 box-shad-1 width-100 fs-copyright py-3 px-5 mt-1 text-black" placeholder="Address Line 1">
+                        </div>
+                        <div class="input-group w-100 mb-4 position-relative">
+                            <p class="fs-copyright mb-1">Email</p>
+                            <input type="email" name="email" id="" class="form-input-1 box-shad-1 w-100 bdr-rad-2 fs-copyright py-3 px-5 mt-1 text-black" placeholder="Email">
+                            <img src="img/email-input.png" alt="" class="input-icon">
+                        </div>
+                        <div class="input-group d-flex justify-content-between">
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">Password</p>
+                                <input type="password" name="password" id="password2" class="form-input-1 box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="Password">
+                                <img src="img/password-input.png" alt="" class="input-icon">
+                                <div id="password-toggler2" class="password-toggler" role="button" onclick="passwordToggleTwo()">
+                                    <img src="img/eye-open.png" id="eye-open2" class="password-eyes eye-open">
+                                    <img src="img/eye-closed.png" id="eye-closed2" class="password-eyes eye-closed">
+                                </div>
+                            </div>
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">Select</p>
+                                <select name="select" id="" class="form-input-1 box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1">
+                                    <option value="" disabled selected>Please choose an option below...</option>
+                                    <option value="1">Option one</option>
+                                    <option value="2">Option two</option>
+                                    <option value="3">Option three</option>
+                                    <option value="4">Option four</option>
+                                </select>
+                                <img src="img/google-input.png" alt="" class="input-icon">
+                                <img src="img/select-icon.png" alt="" class="input-icon-right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box-1 bdr-rad-1 bg-white border hms-border py-4 px-5 mb-5">
+                        <h6 class="fs-headline-1 text-grey-1 text-center">Input Type 2 Variations</h6>
+                        <div class="input-group d-flex justify-content-between mt-5">
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">First Name</p>
+                                <input type="text" name="first-name" id="" class="form-input-2 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="First Name">
+                            </div>
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">Last Name</p>
+                                <input type="text" name="last-name" id="" class="form-input-2 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="Last Name">
+                                <img src="img/name-input.png" alt="" class="input-icon">
+                            </div>
+                        </div>
+                        <div class="input-group width-100 mb-4 position-relative">
+                            <p class="fs-copyright mb-1">Address Line 1</p>
+                            <input type="text" name="address-1" id="" class="form-input-2 width-100 fs-copyright py-3 px-5 mt-1 text-black" placeholder="Address Line 1">
+                        </div>
+                        <div class="input-group w-100 mb-4 position-relative">
+                            <p class="fs-copyright mb-1">Email</p>
+                            <input type="email" name="email" id="" class="form-input-2 w-100 bdr-rad-2 fs-copyright py-3 px-5 mt-1 text-black" placeholder="Email">
+                            <img src="img/email-input.png" alt="" class="input-icon">
+                        </div>
+                        <div class="input-group d-flex justify-content-between">
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">Password</p>
+                                <input type="password" name="password" id="password1" class="form-input-2 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="Password">
+                                <img src="img/password-input.png" alt="" class="input-icon">
+                                <div id="password-toggler1" class="password-toggler" role="button" onclick="passwordToggle()">
+                                    <img src="img/eye-open.png" id="eye-open1" class="password-eyes eye-open">
+                                    <img src="img/eye-closed.png" id="eye-closed1" class="password-eyes eye-closed">
+                                </div>
+                            </div>
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">Select</p>
+                                <select name="select" id="" class="form-input-2 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1">
+                                    <option value="" disabled selected>Please choose an option below...</option>
+                                    <option value="1">Option one</option>
+                                    <option value="2">Option two</option>
+                                    <option value="3">Option three</option>
+                                    <option value="4">Option four</option>
+                                </select>
+                                <img src="img/google-input.png" alt="" class="input-icon">
+                                <img src="img/select-icon.png" alt="" class="input-icon-right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box-1 bdr-rad-1 bg-white border hms-border py-4 px-5 mb-5">
+                        <h6 class="fs-body-1 fw-700 text-grey-1 text-center">Primary Button Variations</h6>
+                        <div class="width-100 md-width-75 lg-width-50 bg-gold-5 mx-auto p-5">
+                            <button class="primary-btn w-100 text-center fs-copyright fw-600 text-white py-3 my-3">100% width button</button>
+                            <button class="primary-btn w-100 text-center fs-copyright fw-600 text-white bdr-rad-2 py-3 my-3">With border radius</button>
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="primary-btn width-45 text-center fs-copyright fw-600 text-white py-3 my-3">Half-width</button>
+                                <button class="primary-btn width-45 text-center fs-copyright fw-600 text-white bdr-rad-2 py-3 my-3">...well almost😜</button>
+                            </div>
+                            <button class="ghost-primary-btn w-100 text-center fs-copyright fw-600 text-pink py-3 my-3">100% width button</button>
+                            <button class="ghost-primary-btn w-100 text-center fs-copyright fw-600 text-pink bdr-rad-2 bdr-width-2 py-3 my-3">With border radius</button>
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="ghost-primary-btn width-45 text-center fs-copyright fw-600 text-pink bdr-width-3 py-3 my-3">Half-width</button>
+                                <button class="ghost-primary-btn width-45 text-center fs-copyright fw-600 text-pink bdr-rad-2 bdr-width-5 py-3 my-3">...well almost😜</button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="primary-btn text-center fs-copyright fw-600 text-pink bdr-width-3 px-5 py-3 mx-auto my-3">Just padding</button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="ghost-primary-btn text-center fs-copyright fw-600 text-pink bdr-width-3 px-5 py-3 mx-auto my-3">Just padding</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box-1 bdr-rad-1 bg-white border hms-border py-4 px-5 mb-5">
+                        <h6 class="fs-body-1 fw-700 text-grey-1 text-center">Secondary Button Variations</h6>
+                        <div class="width-100 md-width-75 lg-width-50 bg-pink-5 mx-auto p-5">
+                            <button class="secondary-btn w-100 text-center fs-copyright fw-600 py-3 my-3">100% width button</button>
+                            <button class="secondary-btn w-100 text-center fs-copyright fw-600 bdr-rad-2 py-3 my-3">With border radius</button>
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="secondary-btn width-45 text-center fs-copyright fw-600 py-3 my-3">Half-width</button>
+                                <button class="secondary-btn width-45 text-center fs-copyright fw-600 bdr-rad-2 py-3 my-3">...well almost😜</button>
+                            </div>
+                            <button class="ghost-secondary-btn w-100 text-center fs-copyright fw-600 py-3 my-3">100% width button</button>
+                            <button class="ghost-secondary-btn w-100 text-center fs-copyright fw-600 bdr-rad-2 bdr-width-2 py-3 my-3">With border radius</button>
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="ghost-secondary-btn width-45 text-center fs-copyright fw-600 bdr-width-3 py-3 my-3">Half-width</button>
+                                <button class="ghost-secondary-btn width-45 text-center fs-copyright fw-600 bdr-rad-2 bdr-width-5 py-3 my-3">...well almost😜</button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="secondary-btn text-center fs-copyright fw-600 bdr-width-3 px-5 py-3 mx-auto my-3">Just padding</button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="ghost-secondary-btn text-center fs-copyright fw-600 bdr-width-3 px-5 py-3 mx-auto my-3">Just padding</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <footer id="main-footer" class=" bg-greyscale-1 text-white mt-3">
         <div class="container">
             <div class="row py-5">
@@ -58,7 +294,7 @@
                     </div>
                     <form action="" method="post">
                         <div class="width-80 md-width-50 lg-width-95 xl-width-80 d-flex">
-                            <input type="text" class="form-input-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
+                            <input type="text" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
                             <button type="submit" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
                         </div>
                     </form>
@@ -110,6 +346,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="js/main.js"></script>
 
     <script>
