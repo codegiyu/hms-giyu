@@ -98,9 +98,18 @@
         </nav>
     </header>
 
+                    <!-- **************************END OF HEADERS**************************** -->
+
+                <!-- **************************BEGINNING OF MAIN SECTION**************************** -->
+
+        <!-- Copy the entire main element and delete what's in .main-content if you're building an admin page    -->
+
     <main>
         <div class="row p-0 m-0">
             <div class="col-lg-2 d-none d-lg-block p-0 m-0">
+
+        <!-- Below is the side navigation for admin pages. Be sure to confirm the right .sidenav-link div has the .active class attached    -->
+
                 <div class="sidenav bg-neutral-4 box-shad-2 d-flex flex-column justify-content-between border-end border-bottom hms-border">
                     <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
                         <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
@@ -134,13 +143,13 @@
                     </div>
                     <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
                         <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
-                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                            <p class="text-grey-1 fs-sidenav error-text text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="main-content col-12 col-lg-10">
-                <div class="container py-4 px-0 px-lg-4">
+            <div class="main-content col-12 col-lg-10">    <!--  This is .main-content   -->
+                <div class="container py-4 px-0 px-lg-4">   <!--  Delete everything inside this container if you're building an admin page   -->
                     <div class="content-box-1 border hms-border bg-white py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
                         <h6 class="fs-body-1 text-grey-1 fw-700 text-center mb-5">Background Colors Variations</h6>
                         <div class="row border rounded mx-0 mb-5">
@@ -249,6 +258,16 @@
                                     <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-5 mb-4 mx-5"></div>
                                     <h6 class="text-black text-center fs-input fw-700">.bg-neutral-5</h6>
                                     <p class="text-center fs-copyright fw-600">#F4F4F4</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-6 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-neutral-6</h6>
+                                    <p class="text-center fs-copyright fw-600">#F7F7F7</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-footer mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-neutral-footer</h6>
+                                    <p class="text-center fs-copyright fw-600">#393D46</p>
                                 </div>
                             </div>
                             <div class="col-6 col-lg-2">
@@ -376,92 +395,92 @@
                         <h6 class="fs-body-1 text-grey-1 fw-700 text-center mb-5">Typography Variations</h6>
                         <div class="row border rounded mx-0 mb-5">
                             <div class="col-12 d-flex flex-wrap pe-5 pt-3">
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-headline-1">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-headline-1</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">48px/64px</span> / <span class="mobile-size">32px/36px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-headline-2">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-headline-2</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">40px/52px</span> / <span class="mobile-size">24px/28px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-headline-3">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-headline-3</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">34px/40px</span> / <span class="mobile-size">24px/28px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-body-1">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-body-1</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">24px/28px</span> / <span class="mobile-size">16px/24px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-body-2">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-body-2</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/24px</span> / <span class="mobile-size">16px/22px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-caption">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-caption</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">24px/28px</span> / <span class="mobile-size">14px/20px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-label">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-label</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/24px</span> / <span class="mobile-size">14px/18px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-large">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-large</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">55px/75px</span> / <span class="mobile-size">32px/36px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-medium">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-medium</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">36px/49px</span> / <span class="mobile-size">24px/32px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-small">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-small</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/28px</span> / <span class="mobile-size">14px/18px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-tiny">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-tiny</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">13px/15px</span> / <span class="mobile-size">13px/15px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-user">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-user</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">34px/40px</span> / <span class="mobile-size">18px/22px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-sidenav">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-sidenav</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">18px/24px</span> / <span class="mobile-size">14px/20px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-nav">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-nav</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">18px/22px</span> / <span class="mobile-size">16px/22px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-button">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-button</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/24px</span> / <span class="mobile-size">16px/22px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-input">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-input</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">16px/20px</span> / <span class="mobile-size">16px/20px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-footer">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-footer</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/24px</span> / <span class="mobile-size">20px/24px</span></p>
                                 </div>
-                                <div class="text-group width-200px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
                                     <h3 class="text-center fw-700 text-black bg-gold-4 py-2 w-100 fs-copyright">Sample Text</h3>
                                     <h6 class="text-black text-center fs-input fw-700">.fs-copyright</h6>
                                     <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">14px/18px</span> / <span class="mobile-size">14px/18px</span></p>
@@ -607,12 +626,181 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- **************************TABLES SECTION**************************** -->
+
+                    <div class="content-box-1 bdr-rad-1 bg-white border hms-border py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
+                        <h6 class="fs-body-1 fw-700 text-grey-1 text-center mb-5">Table Variations</h6>
+                        
+                        <!-- .hms-table-1 (Copy the table below if you have a table on your admin page) -->
+
+                        <table class="hms-table-1">
+                            <col width="40%">
+                            <col width="20%">
+                            <col width="20%">
+                            <col width="20%">
+                            <thead>
+                                <tr>
+                                    <th class="ps-5">Name</th>
+                                    <th>Reservations</th>
+                                    <th>Nights Stayed</th>
+                                    <th>Last Visit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15</td>
+                                    <td>16 June 2022</td>
+                                </tr>
+                                <!-- Below this is a table body row. Duplicate this if your table has more lines than what I have here.  -->
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15</td>
+                                    <td>16 June 2022</td>
+                                </tr>
+                                <!-- Above is a table row. -->
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15</td>
+                                    <td>16 June 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15</td>
+                                    <td>16 June 2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                                                <!-- .hms-table-1 ends above -->
+
+                            <!-- If your admin table features a modal to display some content then copy the modal below  -->
+
+                        <div class="modal fade" id="adminTableModal" tabindex="-1" aria-label="Name of Guest" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content bg-white border border-secondary p-0">
+                                    <div class="d-flex justify-content-end pe-2 py-3">
+                                        <button type="button" class=" modal-close bg-white border-none" data-bs-dismiss="modal" aria-label="Close">
+                                            <span class="iconify" data-icon="clarity:window-close-line" data-width="36" data-height="36"></span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body p-1 p-md-4">
+                                        <div class="py-0 mx-0 mb-5">
+                                            <div class="d-flex align-items-center ps-1 mb-4">
+                                                <div class="ratio ratio-1x1 width-100px rounded-circle me-4">
+                                                    <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                                </div>
+                                                <h6 class="text-grey-1 text-uppercase fs-body-2 fw-700">Richard Tobenna</h6>
+                                            </div>
+                                            <!-- .hms-modal-table starts below. Yes, the .table-wrap div is essential to the table -->
+                                            <div class="table-wrap border hms-border bdr-rad-1">
+                                                <table class="hms-modal-table bg-neutral-6 border hms-border">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-grey-5 ps-4">Personal Details</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th class="text-end text-pink pe-4">Booking History</th>
+                                                        </tr>
+                                                        <tr class="text-grey-5" valign="bottom">
+                                                            <th>Date</th>
+                                                            <th>Room Type</th>
+                                                            <th>Status</th>
+                                                            <th>No. Of Nights Spent</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody valign="bottom">
+                                                        <tr>
+                                                            <td>16 June 2022</td>
+                                                            <td>Superior</td>
+                                                            <td class="text-pink">Reserved</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <!-- Table row below. Duplicate for more lines in your modal table -->
+                                                        <tr>
+                                                            <td>16 June 2022</td>
+                                                            <td>Superior</td>
+                                                            <td class="success-text">Stayed</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <!-- Table row above -->
+                                                        <tr>
+                                                            <td>16 June 2022</td>
+                                                            <td>Superior</td>
+                                                            <td class="text-pink">Reserved</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>16 June 2022</td>
+                                                            <td>Superior</td>
+                                                            <td class="error-text">Cancelled</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- .hms-modal-table ends here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <!-- Admin modal ends above -->
+
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer id="main-footer" class=" bg-neutral-1 text-white mt-3">
+                <!-- **************************END OF MAIN SECTION**************************** -->
+
+    <footer id="main-footer" class=" bg-neutral-footer text-white mt-3">
         <div class="container">
             <div class="row py-5">
                 <div class="col-lg-4 col-md-12 mt-5">
@@ -674,8 +862,8 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> <!-- Please be sure you have this included for admin pages -->
+    <script src="js/main.js"></script>                                          <!-- It's for the icons in the sidenav -->
 
     <script>
         AOS.init();
