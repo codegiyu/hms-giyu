@@ -31,3 +31,14 @@ function passwordToggleTwo(){
     eyeClosed.style.display = "block";  
   }
 }
+
+$(document).ready(function(){
+  $("body").on("click",".table-guest-name",function(){
+    $("#adminTableModal").addClass("position-absolute");
+    $(".modal-backdrop").addClass("position-absolute");
+    $("#adminTableModal").modal("show");
+    $('.modal-backdrop').appendTo('.main-content');
+    $('body').removeClass("modal-open")
+    $('body').css("padding-right","");     
+  });
+});

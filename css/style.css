@@ -721,20 +721,20 @@ select {
 }
 
 /*-----SIDENAV-----*/
-.sidenav {
-    border-color: #00000050;
-}
+
 .sidenav-link.active a {
     background: #FFFFFF;
     border-left: 5px solid #AF13AF;
 }
+.sidenav-link.logout:hover a, 
+.sidenav-link.logout:focus a, 
+.sidenav-link.logout:active a {
+    border-left: 5px solid #BB251A;
+}
 .sidenav-link:hover a {
     background: #fcfcfc;
 }
-.sidenav-link.active p {
-    color: #AF13AF;
-}
-.sidenav-link:hover p {
+.sidenav-link:not(.logout):active p, .sidenav-link:not(.logout):hover p {
     color: #AF13AF;
 }
 .sidenav .iconify {
@@ -850,6 +850,14 @@ select {
         font-size: 12px;
         line-height: 18px;
     }
+}
+
+#adminTableModal.modal {
+    pointer-events: none;
+}
+
+#adminTableModal.modal-backdrop {
+    display: none;
 }
 
 .hms-modal-table {

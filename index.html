@@ -55,15 +55,9 @@
     <div class="space py-5 bg-secondary"></div>
     <header>
         <nav class="navbar bg-transparent py-3 py-md-5 py-lg-0">
-            <a href="#" class="navbar-brand height-50px lg-height-75px ms-3 ms-lg-4 ms-xl-5">
+            <a href="#" class="navbar-brand height-50px md-height-75px lg-height-100px ms-3 ms-lg-4 ms-xl-5">
                 <img src="img/logo.png" alt="Our Logo" class="h-100">
             </a>
-            <!-- <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTwoContent" aria-controls="navbarTwoContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTwoContent">
-                
-            </div> -->
         </nav>
     </header>
     <div class="space py-5 bg-secondary"></div>
@@ -88,7 +82,7 @@
             </a>
             <div class="user me-3 me-lg-4 me-xl-5 d-flex align-items-center">
                 <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
-                    <h6 class="text-pink fs-body-1 fw-700 m-0">Kingston I.</h6>
+                    <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
                     <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
                 </div>
                 <div class="user-pic">
@@ -106,11 +100,11 @@
 
     <main>
         <div class="row p-0 m-0">
-            <div class="col-lg-2 d-none d-lg-block p-0 m-0">
+            <div class="col-lg-2 d-none d-lg-block bg-neutral-4 border-end hms-border p-0 m-0">
 
         <!-- Below is the side navigation for admin pages. Be sure to confirm the right .sidenav-link div has the .active class attached    -->
 
-                <div class="sidenav bg-neutral-4 box-shad-2 d-flex flex-column justify-content-between border-end border-bottom hms-border">
+                <div class="sidenav bg-neutral-4 d-flex flex-column justify-content-between">
                     <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
                         <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
                             <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
@@ -141,14 +135,27 @@
                             <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
                         </a>
                     </div>
-                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
-                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                    <div class="sidenav-link logout bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
                             <p class="text-grey-1 fs-sidenav error-text text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
                         </a>
+                        <div class="modal" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-white border border-secondary p-0">
+                                    <div class="modal-body p-4 p-md-5">
+                                        <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                        <div class="d-flex justify-content-between pt-2 pb-4">
+                                            <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                            <button type="button" class="primary-btn width-48 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3 my-3">Yes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="main-content col-12 col-lg-10">    <!--  This is .main-content   -->
+            <div class="main-content col-12 col-lg-10 position-relative">    <!--  This is .main-content   -->
                 <div class="container py-4 px-0 px-lg-4">   <!--  Delete everything inside this container if you're building an admin page   -->
                     <div class="content-box-1 border hms-border bg-white py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
                         <h6 class="fs-body-1 text-grey-1 fw-700 text-center mb-5">Background Colors Variations</h6>
@@ -655,7 +662,7 @@
                                                 <img src="img/table-test-pic.png" alt="" class="img-fluid">
                                             </div>
                                             <div class="d-flex align-items-center h-100">
-                                                <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Richard Tobenna</p>
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
                                             </div>
                                         </div>
                                     </td>
@@ -671,7 +678,7 @@
                                                 <img src="img/table-test-pic.png" alt="" class="img-fluid">
                                             </div>
                                             <div class="d-flex align-items-center h-100">
-                                                <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Richard Tobenna</p>
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
                                             </div>
                                         </div>
                                     </td>
@@ -687,7 +694,7 @@
                                                 <img src="img/table-test-pic.png" alt="" class="img-fluid">
                                             </div>
                                             <div class="d-flex align-items-center h-100">
-                                                <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Richard Tobenna</p>
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
                                             </div>
                                         </div>
                                     </td>
@@ -702,7 +709,7 @@
                                                 <img src="img/table-test-pic.png" alt="" class="img-fluid">
                                             </div>
                                             <div class="d-flex align-items-center h-100">
-                                                <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Richard Tobenna</p>
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
                                             </div>
                                         </div>
                                     </td>
@@ -860,6 +867,7 @@
     </footer>
 
     <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/aos.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> <!-- Please be sure you have this included for admin pages -->
