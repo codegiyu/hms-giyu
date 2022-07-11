@@ -45,6 +45,7 @@ body {
 .text-grey-3 { color: #393d46;}
 .text-grey-4 { color: #4d4d4d;}
 .text-grey-5 { color: #666666;}
+.text-grey-6 { color: #89898b;}
 .text-pink { color: #AF13AF;}
 .text-sunset-pink { color: #F24B86;}
 .text-gold { color: #FADA14;}
@@ -88,6 +89,7 @@ body {
     .lg-text-grey-3 { color: #393d46;}
     .lg-text-grey-4 { color: #4d4d4d;}
     .lg-text-grey-5 { color: #666666;}
+    .lg-text-grey-6 { color: #89898b;}
     .lg-text-pink { color: #AF13AF;}
     .lg-text-sunset-pink { color: #F24B86;}
     .lg-text-gold { color: #FADA14;}
@@ -165,6 +167,10 @@ body {
 .fs-footer {
     font-size: 20px;
     line-height: 24px;
+}
+.fs-table {
+    font-size: 16px;
+    line-height: 22px;
 }
 .fs-copyright {
     font-size: 14px;
@@ -281,6 +287,7 @@ body {
 .width-100 { width: 100%;}
 
 .width-25px { width: 25px !important;}
+.width-30px { width: 30px !important;}
 .width-35px { width: 35px !important;}
 .width-40px { width: 40px !important;}
 .width-50px { width: 50px !important;}
@@ -293,6 +300,7 @@ body {
 .width-350px { width: 350px !important;}
 
 .height-25px { height: 25px !important;}
+.height-30px { height: 30px !important;}
 .height-35px { height: 35px !important;}
 .height-40px { height: 40px !important;}
 .height-50px { height: 50px !important;}
@@ -328,6 +336,7 @@ body {
     .md-width-100 { width: 100%;}
 
     .md-width-25px { width: 25px !important;}
+    .md-width-30px { width: 30px !important;}
     .md-width-35px { width: 35px !important;}
     .md-width-40px { width: 40px !important;}
     .md-width-50px { width: 50px !important;}
@@ -340,6 +349,7 @@ body {
     .md-width-350px { width: 350px !important;}
 
     .md-height-25px { height: 25px !important;}
+    .md-height-30px { height: 30px !important;}
     .md-height-35px { height: 35px !important;}
     .md-height-40px { height: 40px !important;}
     .md-height-50px { height: 50px !important;}
@@ -482,7 +492,7 @@ body {
 /*-------BUTTONS--------*/
 .primary-btn {
     background-color: #AF13AF;
-    border: 2px solid currentColor;
+    border: 2px solid #AF13AF;
     text-align: center;
     color: #FFFFFF;
 }
@@ -672,7 +682,20 @@ select {
 .eye-closed {
     display: block;
 }
-
+.radio-wrap {
+    padding-left: 7px;
+}
+input[type="radio"] {
+    appearance: none;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1px solid #1a1a1a;
+}
+input[type="radio"]:checked {
+    background: #AF13AF;
+}
 /*-------ALERTS--------*/
 .kim-alert {
     max-width: 30rem;
@@ -729,10 +752,16 @@ select {
 .sidenav-link.active p {
     color: #AF13AF;
 }
-.sidenav-link.logout:hover a, 
-.sidenav-link.logout:focus a, 
-.sidenav-link.logout:active a {
-    border-left: 5px solid #BB251A;
+.sidenav-link.logout:hover a::after, 
+.sidenav-link.logout:focus a::after, 
+.sidenav-link.logout:active a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #BB251A;
 }
 .sidenav-link:hover a {
     background: #fcfcfc;
@@ -806,6 +835,27 @@ select {
 }
 
 /*-----TABLES------*/
+.dropdown-button p {
+    color: #AF13AF;
+}
+.dropdown-button i {
+    color: #000000;
+}
+.dropdown-button:hover p, 
+.dropdown-button:active p, 
+.dropdown-button:focus p,
+.dropdown-button:hover i, 
+.dropdown-button:active i, 
+.dropdown-button:focus i {
+    color: #666666;
+}
+.btn-dropdown {
+    top: -5px;
+    right: 10px;
+}
+.btn-dropdown.hide {
+    display: none;
+}
 .hms-table-1 {
     display: table;
     width: 100%;
@@ -882,13 +932,7 @@ select {
     text-align: center;
 }
 .hms-modal-table thead tr th {
-    height: 90px;
-}
-.hms-modal-table thead tr:nth-of-type(1) th:nth-of-type(1) {
-    text-align: start;
-}
-.hms-modal-table thead tr:nth-of-type(1) th:nth-of-type(2) {
-    text-align: start;
+    height: 180px;
 }
 .hms-modal-table thead tr th {
     padding-bottom: 10px;
@@ -915,4 +959,13 @@ select {
 }
 .modal-close:active, .modal-close:hover, .modal-close:focus {
     color: red;
+}
+.table-wrap {
+    min-height: 200px;
+}
+.tab-btn.current {
+    color: #AF13AF;
+}
+.tab-page.hide {
+    display: none;
 }
