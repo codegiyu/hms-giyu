@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap');
 
+:root {
+    accent-color: #AF13AF;
+}
+
 body {
     background-color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
@@ -176,6 +180,14 @@ body {
     font-size: 14px;
     line-height: 18px;
 }
+.fs-form-input {
+    font-size: 12px;
+    line-height: 12px;
+}
+.fs-forgot {
+    font-size: 16px;
+    line-height: 24px;
+}
 
 @media only screen and (max-width: 991.99px) {
     .fs-large {
@@ -233,6 +245,10 @@ body {
     .fs-button {
         font-size: 16px;
         line-height: 22px;
+    }
+    .fs-forgot {
+        font-size: 10px;
+        line-height: 20px;
     }
 }
 
@@ -651,29 +667,29 @@ select {
 .input-icon {
     height: 16px;
     position: absolute;
-    bottom: 18px;
+    bottom: 14px;
     left: 0.9rem;
 }
 .input-icon-2 {
     height: 12px;
     position: absolute;
-    bottom: 20px;
+    bottom: 16px;
     left: 0.9rem;
 }
 .input-icon-right {
     height: 8px;
     position: absolute;
-    bottom: 22px;
+    bottom: 18px;
     right: 1rem;
 }
 .password-toggler {
     position: absolute;
-    bottom: 17px;
+    bottom: 12px;
     right: 0.9rem;
     cursor: pointer;
 }
 .password-eyes {
-    height: 18px;
+    height: 20px;
     opacity: 0.9;
 }
 .eye-open {
@@ -681,9 +697,6 @@ select {
 }
 .eye-closed {
     display: block;
-}
-.radio-wrap {
-    padding-left: 7px;
 }
 input[type="radio"] {
     appearance: none;
@@ -695,6 +708,27 @@ input[type="radio"] {
 }
 input[type="radio"]:checked {
     background: #AF13AF;
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #FFFFFF;
+    border: 0.75px solid #CAD4DD;
+    border-radius: 1px;
+}
+input[type="checkbox"]:checked {
+    /* background: #AF13AF; */
+    background-image: url("https://iamkate.com/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.75px solid #F49AF4;
+}
+input[type="checkbox"]:hover {
+    box-shadow: 0 0 0 2px #F49AF430;
+}
+input[type="checkbox"]:focus, input[type="checkbox"]:active {
+    box-shadow: 0 0 0 2px #F49AF470;   
 }
 /*-------ALERTS--------*/
 .kim-alert {
